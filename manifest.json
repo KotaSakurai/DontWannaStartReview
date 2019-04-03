@@ -1,0 +1,13 @@
+{
+  "name": "DontWannaStartReview",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "default_locale": "ja_JP",
+  "description": "We don't want to start Review comments",
+  "content_scripts": [{
+    "matches": ["https://{subdomain}.github.com/*"],
+    "js": [
+      "content.js"
+    ]
+  }]
+}
